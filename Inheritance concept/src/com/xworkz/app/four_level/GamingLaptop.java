@@ -1,10 +1,18 @@
 package com.xworkz.app.four_level;
 
-public class GamingLaptop {
+public class GamingLaptop extends Laptop {
 
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+	private int gpuMemory;
 
-	}
+    public GamingLaptop(String deviceUsed,String brand, String model, double screenSize, int gpuMemory) {
+        super(deviceUsed, brand, model, screenSize);
+        System.out.println("Invoking constructor in Gaming LAptop");
+        this.gpuMemory = gpuMemory;
+    }
+
+    public void displayInfo() {
+        super.displayInfo();;
+        System.out.println("GPU Memory: " + gpuMemory + " GB");
+    }
 
 }

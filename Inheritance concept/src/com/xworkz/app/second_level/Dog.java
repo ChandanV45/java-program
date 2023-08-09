@@ -1,10 +1,18 @@
+
 package com.xworkz.app.second_level;
 
-public class Dog {
+public class Dog extends Mammal {
 
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
+	public String breed;
+	public Dog(String breed)
+	{
+		super(givesBirth);
+		System.out.println("Invoking no-arg const in Dog");
+	this.breed=breed;
 	}
+
+	public void bark() {
+        System.out.println("Dog is barking");
+    }
 
 }

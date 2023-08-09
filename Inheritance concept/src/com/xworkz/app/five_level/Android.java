@@ -1,10 +1,16 @@
 package com.xworkz.app.five_level;
 
-public class Android {
+public class Android extends SmartPhone{
+	 public String androidVersion;
 
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+	    public Android(String brand, String model,String deviceUsed, String operatingSystem, String androidVersion) {
+	        super(brand, model, deviceUsed,operatingSystem);
+	        this.androidVersion = androidVersion;
+	    }
 
-	}
+	    public void displayInfo() {
+	        super.displayInfo();
+	        System.out.println("Android Version: " + androidVersion);
+	    }
 
 }

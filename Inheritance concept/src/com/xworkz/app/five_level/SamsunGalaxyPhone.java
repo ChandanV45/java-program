@@ -1,10 +1,17 @@
+
 package com.xworkz.app.five_level;
 
-public class SamsunGalaxyPhone {
+public class SamsunGalaxyPhone extends SamsungPhone {
+	public int cameraResolution;
 
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+    public SamsunGalaxyPhone(String brand, String model,String deviceUsed, String operatingSystem, String androidVersion, String displayTechnology, int cameraResolution) {
+        super(brand, model, deviceUsed,operatingSystem, androidVersion, displayTechnology);
+        this.cameraResolution = cameraResolution;
+    }
 
-	}
+    public void displayInfo() {
+        super.displayInfo();
+        System.out.println("Camera Resolution: " + cameraResolution + " MP");
+    }
 
 }

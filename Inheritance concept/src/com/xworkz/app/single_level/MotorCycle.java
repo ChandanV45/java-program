@@ -1,10 +1,19 @@
 package com.xworkz.app.single_level;
 
-public class MotorCycle {
+public class MotorCycle extends Vechicle{
 
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+	public double price;
 
+	public MotorCycle(double price)
+	{
+		super(name);
+		System.out.println("Invoking no-arg const in MotorCycle");
+		this.price=price;
+	}
+
+	public void brand()
+	{
+		System.out.println("Invoking brand in MotoCycle");
 	}
 
 }

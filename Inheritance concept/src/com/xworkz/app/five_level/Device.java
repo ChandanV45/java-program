@@ -2,9 +2,18 @@ package com.xworkz.app.five_level;
 
 public class Device {
 
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+	public String brand;
+    public String model;
 
-	}
+    public Device(String brand, String model) {
+    	System.out.println("Invoking const in Device");
+        this.brand = brand;
+        this.model = model;
+    }
+
+    public void displayInfo() {
+        System.out.println("Brand: " + brand);
+        System.out.println("Model: " + model);
+    }
 
 }

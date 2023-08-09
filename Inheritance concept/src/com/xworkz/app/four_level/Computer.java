@@ -1,10 +1,21 @@
+
 package com.xworkz.app.four_level;
 
-public class Computer {
+public class Computer extends ElectronicDevice {
 
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+	private String brand;
+    private String model;
 
-	}
+    public Computer(String deviceUsed,String brand, String model) {
+    	super(deviceUsed);
+    	System.out.println("Invoking constructor in Computer");
+        this.brand = brand;
+        this.model = model;
+    }
 
+    public void display() {
+    	super.display();
+        System.out.println("Brand: " + brand);
+        System.out.println("Model: " + model);
+    }
 }

@@ -1,10 +1,14 @@
 package com.xworkz.app.six_level;
 
-public class ResearchAssistant {
+public class ResearchAssistant extends PhDStudent {
 
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+	public ResearchAssistant(String name, int studentId, String researchTopic) {
+        super(name, studentId, researchTopic);
+        System.out.println("invoking const in ResearchAssistant");
+    }
 
-	}
-
+    public void introduce() {
+        super.introduce();
+        System.out.println("I am also working as a research assistant.");
+    }
 }

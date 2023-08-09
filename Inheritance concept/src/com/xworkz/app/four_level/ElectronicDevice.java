@@ -2,9 +2,18 @@ package com.xworkz.app.four_level;
 
 public class ElectronicDevice {
 
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+	public static String deviceUsed;
+
+	public ElectronicDevice(String deviceUsed){
+		System.out.println("Invoking String const in ELectronicDevice");
+		this.deviceUsed=deviceUsed;
 
 	}
+
+	public void display()
+	{
+		System.out.println("Device used is "+this.deviceUsed);
+	}
+
 
 }

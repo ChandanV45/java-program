@@ -1,10 +1,14 @@
 package com.xworkz.app.six_level;
 
-public class MasterStudent {
+public class MasterStudent extends GraduateStudent {
 
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+	public MasterStudent(String name, int studentId, String researchTopic) {
+        super(name, studentId, researchTopic);
+        System.out.println("invoking const in MasterStudent");
+    }
 
-	}
-
+    public void introduce() {
+        super.introduce();
+        System.out.println("I am pursuing a Master's degree.");
+    }
 }
